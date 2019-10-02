@@ -1,7 +1,7 @@
-import { Options } from "./Options";
-import { Results } from "./Results";
-import { Timeline } from "./Timeline";
-import { Title } from "./Title";
+import Options from "./Options";
+import Results from "./Results";
+import Timeline from "./Timeline";
+import Title from "./Title";
 import React from "react";
 import "../App.css";
 
@@ -10,8 +10,8 @@ function App() {
     <div className="App">
       <Title />
       <Options />
-      {/* <Results />
-      <Timeline /> */}
+      <Results />
+      <Timeline />
     </div>
   );
 }
