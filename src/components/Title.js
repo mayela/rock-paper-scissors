@@ -1,6 +1,6 @@
 import React from "react";
 
-export function Title({ logo }) {
+export function Title() {
   return (
     <header className="Title">
       <h1>Rock, Paper & Scissors</h1>
