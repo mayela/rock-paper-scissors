@@ -1,9 +1,9 @@
-import Options from "./Options";
-import Results from "./Results";
-import Timeline from "./Timeline";
-import Title from "./Title";
+import Options from "../Options/index";
+import Results from "../Results";
+import Timeline from "../Timeline";
+import Title from "../Title";
 import React from "react";
-import "../App.css";
+import "./App.css";
 
 function App() {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import DuckImg from "../assets/images/duck-pixel.png";
+import DuckImg from "./images/duck-pixel.png";
 
 export function TimelineEntry() {
   return (
