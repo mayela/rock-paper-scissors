@@ -1,12 +1,6 @@
 import React from "react";
+import DuckImg from "../assets/images/duck-pixel.png";
 
 export function Option() {
-  return (
-    <img
-      src="../../assets/img/duck-pixel.png"
-      alt="Duck"
-      width="50"
-      height="50"
-    />
-  );
+  return <img src={DuckImg} alt="Duck" width="50" height="50" />;
 }
