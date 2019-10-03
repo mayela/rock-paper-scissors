@@ -1,4 +1,7 @@
-.image-button {
+.button {
+  padding: 10px;
+}
+.image {
   width: 200px;
   height: 200px;
   padding: 10px;
