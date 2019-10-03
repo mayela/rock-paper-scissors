@@ -9,3 +9,10 @@
 #scissors-color {
   color: #535353;
 }
+
+#ruler {
+  display: block;
+  width: 5%;
+  border-top: 3px solid #3da7d9;
+  padding: 10px;
+}

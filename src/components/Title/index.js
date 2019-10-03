@@ -9,6 +9,7 @@ export default function Title() {
         <span id="paper-color">, Paper</span>
         <span id="scissors-color"> & Scissors</span>
       </h1>
+      <span id="ruler"></span>
     </header>
   );
 }
