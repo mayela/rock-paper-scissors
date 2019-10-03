@@ -1,4 +1,4 @@
-import Options from "../Options/index";
+import Options from "../Options";
 import Results from "../Results";
 import Timeline from "../Timeline";
 import Title from "../Title";

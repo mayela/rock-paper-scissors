@@ -1,7 +1,7 @@
 import React from "react";
-import DuckImg from "./images/duck-pixel.png";
+import DuckImg from "../../images/duck-pixel.png";
 
-export function TimelineEntry() {
+export default function TimelineEntry() {
   return (
     <div>
       <img src={DuckImg} alt="Duck" width="50" height="50" />
