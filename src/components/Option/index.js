@@ -1,6 +1,6 @@
 import React from "react";
-import DuckImg from "../../images/duck-pixel.png";
+import "./index.css";
 
-export default function Option() {
-  return <img src={DuckImg} alt="Duck" width="50" height="50" />;
+export default function Option(props) {
+  return <img className="image-button" src={props.image} alt={props.altText} />;
 }
