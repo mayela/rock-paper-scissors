@@ -1,0 +1,15 @@
+.entry {
+  display: flex;
+  flex-direction: row;
+}
+.divider {
+  display: flex;
+  justify-content: center;
+}
+
+.ruler {
+  display: block;
+  width: 5%;
+  border-top: 3px solid #3da7d9;
+  padding: 10px;
+}
