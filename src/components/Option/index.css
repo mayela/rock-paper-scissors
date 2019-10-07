@@ -11,14 +11,14 @@
   padding: 5px;
 }
 
-#rock {
+.rock {
   border-color: #63424b;
 }
 
-#paper {
+.paper {
   border-color: #36504b;
 }
 
-#scissors {
+.scissors {
   border-color: #535353;
 }

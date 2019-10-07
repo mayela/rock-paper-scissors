@@ -3,13 +3,15 @@ import "./index.css";
 
 export default function Title() {
   return (
-    <header className="Title">
+    <header className="title">
       <h1>
-        <span id="rock-color">Rock</span>
-        <span id="paper-color">, Paper</span>
-        <span id="scissors-color"> & Scissors</span>
+        <span className="rock-color">Rock</span>
+        <span className="paper-color">, Paper</span>
+        <span className="scissors-color"> & Scissors</span>
       </h1>
-      <span id="ruler"></span>
+      <div className="divider">
+        <span className="ruler"></span>
+      </div>
     </header>
   );
 }

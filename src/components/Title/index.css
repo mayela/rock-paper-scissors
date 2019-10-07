@@ -1,16 +1,21 @@
-#rock-color {
+.rock-color {
   color: #63424b;
 }
 
-#paper-color {
+.paper-color {
   color: #36504b;
 }
 
-#scissors-color {
+.scissors-color {
   color: #535353;
 }
 
-#ruler {
+.divider {
+  display: flex;
+  justify-content: center;
+}
+
+.ruler {
   display: block;
   width: 5%;
   border-top: 3px solid #3da7d9;
