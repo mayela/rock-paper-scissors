@@ -1,14 +1,14 @@
+import ImageEntry from "./../ImageEntry/index";
 import React from "react";
-import DuckImg from "../../images/duck-pixel.png";
 
-export default function TimelineEntry() {
+export default function TimelineEntry(props) {
   return (
     <div className="entry">
-      <img src={DuckImg} alt="Duck" width="50" height="50" />
+      <ImageEntry image={props.image} altText={props.altText} />
       <div className="divider">
         <span className="ruler"></span>
       </div>
-      <img src={DuckImg} alt="Duck" width="50" height="50" />
+      <ImageEntry image={props.image} altText={props.altText} />
     </div>
   );
 }
