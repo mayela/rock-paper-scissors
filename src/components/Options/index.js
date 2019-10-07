@@ -7,9 +7,9 @@ import ScissorsImage from "../../images/scissors.png";
 export default function Options() {
   return (
     <div>
-      <Option image={RockImage} altText="Rock" />
-      <Option image={PaperImage} altText="Paper" />
-      <Option image={ScissorsImage} altText="Scissors" />
+      <Option type="rock" image={RockImage} altText="Rock" />
+      <Option type="paper" image={PaperImage} altText="Paper" />
+      <Option type="scissors" image={ScissorsImage} altText="Scissors" />
     </div>
   );
 }
