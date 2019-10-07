@@ -4,14 +4,14 @@ import "./index.css";
 class Results extends React.Component {
   render() {
     return (
-      <div>
-        <div className="result-header">
+      <div className="results-table">
+        <div className="result-me">
           <p>Me</p>
-          <p>Machine</p>
+          <p id="result-me">0</p>
         </div>
-        <div className="result-content">
-          <p>0</p>
-          <p>0</p>
+        <div className="result-machine">
+          <p>Machine</p>
+          <p id="result-machine">0</p>
         </div>
       </div>
     );
