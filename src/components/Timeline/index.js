@@ -7,9 +7,16 @@ class Timeline extends React.Component {
   render() {
     return (
       <div>
-        <MiniButton />
-        <div className="line"></div>
-        <MiniButton />
+        <div className="timeline-entry">
+          <MiniButton />
+          <div className="line"></div>
+          <MiniButton />
+        </div>
+        <div className="timeline-entry">
+          <MiniButton />
+          <div className="line"></div>
+          <MiniButton />
+        </div>
       </div>
     );
   }

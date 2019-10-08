@@ -1,6 +1,12 @@
 .line {
-  border: 1px solid lightblue;
   background-color: lightblue;
   display: inline-block;
   width: 30%;
+  height: 5px;
+}
+
+.timeline-entry {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
