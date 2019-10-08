@@ -3,14 +3,14 @@ import Image from "../Image";
 
 import "./styles.css";
 
-import MiniRock from "../../images/mini-r.png";
-import MiniPaper from "../../images/mini-p.png";
-import MiniScissors from "../../images/mini-s.png";
+import MiniRock from "../../images/mini-rock.png";
+import MiniPaper from "../../images/mini-paper.png";
+import MiniScissors from "../../images/mini-scissors.png";
 
 const mapImage = {
   r: MiniRock,
   p: MiniPaper,
-  s: MiniScissors
+  s: MiniScissors,
 };
 
 const MiniButton = props => {

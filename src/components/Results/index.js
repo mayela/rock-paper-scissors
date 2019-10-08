@@ -16,18 +16,6 @@ class Results extends React.Component {
         </div>
       </div>
     );
-    // return (
-    //   <div className="results-table">
-    //     <div className="result-me">
-    //       <p>Me</p>
-    //       <p id="result-me">0</p>
-    //     </div>
-    //     <div className="result-machine">
-    //       <p>Machine</p>
-    //       <p id="result-machine">0</p>
-    //     </div>
-    //   </div>
-    // );
   }
 }
 

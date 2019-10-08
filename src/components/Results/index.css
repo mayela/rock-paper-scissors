@@ -1,6 +1,9 @@
 .results-table {
   background-color: #c3c3c314;
   margin: 3em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 .number {
   font-size: 3em;
@@ -8,18 +11,7 @@
 }
 .points {
   display: inline-block;
-  /* border: 1px solid red; */
   padding: 1em;
   font-weight: bold;
   font-size: 2em;
 }
-
-/* .results-table {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 33.33%);
-  grid-template-rows: repeat(auto-fill, 100%);
-}
-
-.results-header {
-  display: inline-flex;
-} */
