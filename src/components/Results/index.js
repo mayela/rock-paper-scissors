@@ -5,16 +5,29 @@ class Results extends React.Component {
   render() {
     return (
       <div className="results-table">
-        <div className="result-me">
+        <div className="points">
           <p>Me</p>
-          <p id="result-me">0</p>
+          <p className="number">0</p>
         </div>
-        <div className="result-machine">
+        <div className="points">-</div>
+        <div className="points">
           <p>Machine</p>
-          <p id="result-machine">0</p>
+          <p className="number">0</p>
         </div>
       </div>
     );
+    // return (
+    //   <div className="results-table">
+    //     <div className="result-me">
+    //       <p>Me</p>
+    //       <p id="result-me">0</p>
+    //     </div>
+    //     <div className="result-machine">
+    //       <p>Machine</p>
+    //       <p id="result-machine">0</p>
+    //     </div>
+    //   </div>
+    // );
   }
 }
 

@@ -1,5 +1,8 @@
 import React from "react";
+import "./styles.css";
+
 import TimelineEntry from "../TimelineEntry";
+import MiniButton from "../MiniButton";
 
 class Timeline extends React.Component {
   // Pass an array formated:
@@ -9,7 +12,14 @@ class Timeline extends React.Component {
   // { "type": "scissors", "image": ScissorsImage }
   //]
   render() {
-    return <TimelineEntry />;
+    // return <TimelineEntry />;
+    return (
+      <div>
+        <MiniButton />
+        <div className="divider"></div>
+        <MiniButton />
+      </div>
+    );
   }
 }
 

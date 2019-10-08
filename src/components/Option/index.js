@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.css";
-import Image from "./../Image/index";
+import Image from "./../Image";
 
 export default function Option(props) {
   return (
