@@ -2,12 +2,35 @@ import React from "react";
 import "./index.css";
 import Image from "./../Image";
 
-export default function Option(props) {
-  callMachine(){
+class Option extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { results: { me: 0, machine: 0 } };
   }
-  return (
-    <button className={`button ${props.type}`} onClick={() => alert("click")}>
-      <Image option={true} image={props.image} altText={props.altText} />
-    </button>
-  );
+
+  callMachine(option) {
+    const url = `https://smartplay.afiniti.com/v1/play/${option}`;
+    const options = { method: "GET" };
+    const response = fetch(url, options);
+    const data = response.json();
+    const machineResult = data["nextBestMove"];
+    return machineResult;
+  }
+
+  render() {
+    return (
+      <button
+        className={`button ${this.props.type}`}
+        onClick={() => callMachine("R")}
+      >
+        <Image
+          option={true}
+          image={this.props.image}
+          altText={this.props.altText}
+        />
+      </button>
+    );
+  }
 }
+
+export default Option;
