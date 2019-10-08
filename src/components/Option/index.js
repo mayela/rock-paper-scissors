@@ -5,7 +5,6 @@ import Image from "./../Image";
 class Option extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { results: { me: 0, machine: 0 } };
   }
 
   callMachine(option) {
