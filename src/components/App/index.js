@@ -14,11 +14,11 @@ class App extends React.Component {
     };
   }
 
-  move(option) {
+  async move(option) {
     const url = `https://smartplay.afiniti.com/v1/play/${option}`;
     const options = { method: "GET" };
-    const response = fetch(url, options);
-    const data = response.json();
+    const response = await fetch(url, options);
+    const data = await response.json();
     const machineResult = data["nextBestMove"];
     return { me: option, machine: machineResult };
   }
