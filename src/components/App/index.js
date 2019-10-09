@@ -38,7 +38,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Title />
-        <Options onClick={this.handleClick("R")} />
+        <Options onClick={option => this.handleClick(option)} />
         <Results results={this.state.results} />
         <Timeline />
       </div>

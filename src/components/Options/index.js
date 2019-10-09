@@ -12,7 +12,7 @@ export default function Options(props) {
         type="rock"
         image={RockImage}
         altText="Rock"
-        onclick={props.onClick}
+        onClick={props.onClick}
       />
       <Option
         type="paper"
