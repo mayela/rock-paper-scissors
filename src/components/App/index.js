@@ -23,10 +23,11 @@ class App extends React.Component {
     return { me: option, machine: machineResult };
   }
 
-  setHistory(option) {
-    const result = this.move(option);
+  async setHistory(option) {
+    const result = await this.move(option);
     const history = this.state.history;
-    this.setState({ history: history.push(result) });
+    history.push(result);
+    this.setState({ history: history });
   }
 
   handleClick(option) {
