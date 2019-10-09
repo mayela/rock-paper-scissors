@@ -3,18 +3,29 @@ import React from "react";
 import RockImage from "../../images/rock.png";
 import PaperImage from "../../images/paper.png";
 import ScissorsImage from "../../images/scissors.png";
+import "./index.css";
 
-export default function Options() {
+export default function Options(props) {
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "space-between"
-      }}
-    >
-      <Option type="rock" image={RockImage} altText="Rock" />
-      <Option type="paper" image={PaperImage} altText="Paper" />
-      <Option type="scissors" image={ScissorsImage} altText="Scissors" />
+    <div className="options">
+      <Option
+        type="rock"
+        image={RockImage}
+        altText="Rock"
+        onclick={props.onClick}
+      />
+      <Option
+        type="paper"
+        image={PaperImage}
+        altText="Paper"
+        onClick={props.onClick}
+      />
+      <Option
+        type="scissors"
+        image={ScissorsImage}
+        altText="Scissors"
+        onClick={props.onClick}
+      />
     </div>
   );
 }

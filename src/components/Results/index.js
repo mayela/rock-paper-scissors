@@ -11,7 +11,7 @@ export default function Results(props) {
       <div className="points">-</div>
       <div className="points">
         <p>Machine</p>
-        <p className="number">{props.result.machine}</p>
+        <p className="number">{props.results.machine}</p>
       </div>
     </div>
   );
