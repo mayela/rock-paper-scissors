@@ -5,15 +5,22 @@ import Title from "../Title";
 import React from "react";
 import "./index.css";
 
-function App() {
-  return (
-    <div className="App">
-      <Title />
-      <Options />
-      <Results />
-      <Timeline />
-    </div>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { results: { me: 0, machine: 0 } };
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Title />
+        <Options />
+        <Results results={this.state.results} />
+        <Timeline />
+      </div>
+    );
+  }
 }
 
 export default App;
