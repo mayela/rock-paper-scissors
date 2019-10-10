@@ -12,19 +12,19 @@ export default function Options(props) {
         type="rock"
         image={RockImage}
         altText="Rock"
-        onClick={props.onClick}
+        onClick={() => props.onClick("R")}
       />
       <Option
         type="paper"
         image={PaperImage}
         altText="Paper"
-        onClick={props.onClick}
+        onClick={() => props.onClick("P")}
       />
       <Option
         type="scissors"
         image={ScissorsImage}
         altText="Scissors"
-        onClick={props.onClick}
+        onClick={() => props.onClick("S")}
       />
     </div>
   );

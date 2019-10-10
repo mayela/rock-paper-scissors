@@ -10,7 +10,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       results: { me: 0, machine: 0 },
-      history: [],
+      history: []
     };
   }
 
@@ -23,22 +23,44 @@ class App extends React.Component {
     return { me: option, machine: machineResult };
   }
 
-  async setHistory(option) {
-    const result = await this.move(option);
+  setHistory(result) {
     const history = this.state.history;
     history.push(result);
     this.setState({ history: history });
   }
 
-  handleClick(option) {
-    this.setHistory(option);
+  setResults(results) {
+    this.setState({ results: results });
+  }
+
+  decideWhoWin(result) {
+    const results = this.state.results;
+    if (result["me"] === result["machine"]) {
+      console.log("Nadie gana");
+    } else if (result["me"] === "R" && result["machine"] === "S") {
+      results["me"] = results["me"] + 1;
+    } else if (result["me"] === "S" && result["machine"] === "P") {
+      results["me"] = results["me"] + 1;
+    } else if (result["me"] === "P" && result["machine"] === "R") {
+      results["me"] = results["me"] + 1;
+    } else {
+      results["machine"] = results["machine"] + 1;
+    }
+    this.setResults(results);
+  }
+
+  async handleClick(option) {
+    console.log(option);
+    const result = await this.move(option);
+    this.setHistory(result);
+    this.decideWhoWin(result);
   }
 
   render() {
     return (
       <div className="App">
         <Title />
-        <Options onClick={option => this.handleClick(option)} />
+        <Options onClick={this.handleClick} />
         <Results results={this.state.results} />
         <Timeline />
       </div>
