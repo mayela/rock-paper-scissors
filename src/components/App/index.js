@@ -36,7 +36,7 @@ class App extends React.Component {
   decideWhoWin(result) {
     const results = this.state.results;
     if (result["me"] === result["machine"]) {
-      console.log("No one wins");
+      alert("No one wins");
     } else if (result["me"] === "R" && result["machine"] === "S") {
       results["me"] = results["me"] + 1;
     } else if (result["me"] === "S" && result["machine"] === "P") {
@@ -50,7 +50,6 @@ class App extends React.Component {
   }
 
   handleClick = async option => {
-    console.log(option);
     const result = await this.move(option);
     console.log(result);
     this.setHistory(result);
