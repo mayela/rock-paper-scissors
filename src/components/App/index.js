@@ -10,7 +10,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       results: { me: 0, machine: 0 },
-      history: []
+      history: [],
     };
   }
 
@@ -49,12 +49,13 @@ class App extends React.Component {
     this.setResults(results);
   }
 
-  async handleClick(option) {
+  handleClick = async option => {
     console.log(option);
     const result = await this.move(option);
+    console.log(result);
     this.setHistory(result);
     this.decideWhoWin(result);
-  }
+  };
 
   render() {
     return (
@@ -62,7 +63,7 @@ class App extends React.Component {
         <Title />
         <Options onClick={this.handleClick} />
         <Results results={this.state.results} />
-        <Timeline />
+        <Timeline history={this.state.history} />
       </div>
     );
   }

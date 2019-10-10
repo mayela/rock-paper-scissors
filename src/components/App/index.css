@@ -1,5 +1,7 @@
 body {
   font-family: "Raleway", sans-serif;
+  width: 1024px;
+  margin: 0 auto;
 }
 
 .App {

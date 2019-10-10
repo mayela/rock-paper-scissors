@@ -3,23 +3,18 @@ import "./styles.css";
 
 import MiniButton from "../MiniButton";
 
-class Timeline extends React.Component {
-  render() {
-    return (
-      <div>
-        <div className="timeline-entry">
-          <MiniButton />
-          <div className="line"></div>
-          <MiniButton />
-        </div>
-        <div className="timeline-entry">
-          <MiniButton />
-          <div className="line"></div>
-          <MiniButton />
-        </div>
-      </div>
-    );
-  }
+export default function Timeline(props) {
+  return (
+    <div>
+      {props.history.map(function(historyEntry) {
+        return (
+          <div className="timeline-entry">
+            <MiniButton type={historyEntry["me"]} />
+            <div className="line"></div>
+            <MiniButton type={historyEntry["machine"]} />
+          </div>
+        );
+      })}
+    </div>
+  );
 }
-
-export default Timeline;

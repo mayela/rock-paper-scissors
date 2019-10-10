@@ -8,13 +8,13 @@ import MiniPaper from "../../images/mini-paper.png";
 import MiniScissors from "../../images/mini-scissors.png";
 
 const mapImage = {
-  r: MiniRock,
-  p: MiniPaper,
-  s: MiniScissors,
+  R: MiniRock,
+  P: MiniPaper,
+  S: MiniScissors,
 };
 
 const MiniButton = props => {
-  const { type = "r" } = props;
+  const { type = "R" } = props;
   return (
     <div className="mini-button">
       <Image image={mapImage[type]} />
