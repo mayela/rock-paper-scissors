@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/rock-paper-scissors/static/css/main.f49560e0.chunk.css",
+    "main.js": "/rock-paper-scissors/static/js/main.ee386b78.chunk.js",
+    "main.js.map": "/rock-paper-scissors/static/js/main.ee386b78.chunk.js.map",
+    "runtime-main.js": "/rock-paper-scissors/static/js/runtime-main.26326533.js",
+    "runtime-main.js.map": "/rock-paper-scissors/static/js/runtime-main.26326533.js.map",
+    "static/js/2.88d549cf.chunk.js": "/rock-paper-scissors/static/js/2.88d549cf.chunk.js",
+    "static/js/2.88d549cf.chunk.js.map": "/rock-paper-scissors/static/js/2.88d549cf.chunk.js.map",
+    "index.html": "/rock-paper-scissors/index.html",
+    "precache-manifest.2de666f7240b69eb073ed8d1b69e41ac.js": "/rock-paper-scissors/precache-manifest.2de666f7240b69eb073ed8d1b69e41ac.js",
+    "service-worker.js": "/rock-paper-scissors/service-worker.js",
+    "static/css/main.f49560e0.chunk.css.map": "/rock-paper-scissors/static/css/main.f49560e0.chunk.css.map",
+    "static/media/mini-paper.png": "/rock-paper-scissors/static/media/mini-paper.54fafa28.png",
+    "static/media/mini-rock.png": "/rock-paper-scissors/static/media/mini-rock.f367038a.png",
+    "static/media/paper.png": "/rock-paper-scissors/static/media/paper.af142a71.png",
+    "static/media/rock.png": "/rock-paper-scissors/static/media/rock.b7111e7e.png",
+    "static/media/scissors.png": "/rock-paper-scissors/static/media/scissors.c9d85f9d.png"
+  }
+}
