@@ -25,7 +25,7 @@ class App extends React.Component {
 
   setHistory(result) {
     const history = this.state.history;
-    history.push(result);
+    history.unshift(result);
     this.setState({ history: history });
   }
 
