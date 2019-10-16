@@ -1,8 +1,9 @@
 .line {
   background-color: lightblue;
   display: inline-block;
-  width: 30%;
+  width: 40%;
   height: 5px;
+  align-self: center
 }
 
 .timeline-entry {
